@@ -10,7 +10,7 @@ person_1 = {
 
 # verify the type of person_1 to be a dictionary by using type
 
-print(type(person_1))
+# print(type(person_1))
 
 # add a key value pair to person_1 with the last_name of Doo
 
@@ -19,9 +19,4 @@ print(person_1.items())
 
 # update person_1 favorite_snack to "Scooby Snacks"
 
-person_1["favorite_snack"] = "Scooby Snacks"
-print(person_1.items())
-
 # Remove the "wears_glasses" key:value from person_1
-person_1.pop("wears_glasses")
-print(person_1.items())

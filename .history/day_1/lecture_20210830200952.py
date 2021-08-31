@@ -25,10 +25,10 @@
 # Dictionaries are written with curly brackets, and have keys and values:
 
 my_car = {
-    "brand": "Ford",
-    "model": "Mustang",
-    "year": 2021,
-    "interest": 22
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 2021,
+  "interest": 22
 }
 
 # Dictionary items are ordered, changeable, and does not allow duplicates.
@@ -54,10 +54,10 @@ print(my_car["year"])
 # you cannot refer to an item by using an index.
 
 # Changeable
-# Dictionaries are changeable, meaning that we can change, add or remove items after the dictionary has been created.
+    # Dictionaries are changeable, meaning that we can change, add or remove items after the dictionary has been created.
 
 # Duplicates Not Allowed
-# Dictionaries cannot have two items with the same key:
+    # Dictionaries cannot have two items with the same key:
 
 # Dictionary Length
 # To determine how many items a dictionary has,
@@ -72,11 +72,11 @@ number_of_my_car_keys = len(my_car)
 # String, int, boolean, and list data types:
 
 your_car = {
-    "brand": "Toyota",
-    "model": "Pruis",
-    "electric": True,
-    "year": 2012,
-    "colors": ["red", "white", "blue"]
+  "brand": "Toyota",
+  "model": "Pruis",
+  "electric": True,
+  "year": 2012,
+  "colors": ["red", "white", "blue"]
 }
 
 # Accessing Items
@@ -100,25 +100,23 @@ your_car_brand = your_car.get('brand')
 # The keys() method will return a list of all the keys in the dictionary.
 
 key_list = your_car.keys()
-print(key_list)  # dict_keys(["brand", "model", "electric", "year", "color"])
-print(type(key_list))  # <class 'dict_keys'>*
+print(key_list) # dict_keys(["brand", "model", "electric", "year", "color"])
+print(type(key_list)) # <class 'dict_keys'>*
 
 # Get Values
 # The values() method will return a list of all the values in the dictionary.
 
 value_list = your_car.values()
-# dict_values(['Toyota', 'Pruis', True, 2012, ['red', 'white', 'blue']])
-print(value_list)
-print(type(value_list))  # <class 'dict_values'>*
+print(value_list) # dict_values(['Toyota', 'Pruis', True, 2012, ['red', 'white', 'blue']])
+print(type(value_list)) # <class 'dict_values'>*
 
 # Get Items
 # The items() method will return each item in a dictionary,
 # as tuples* in a list.
 
 item_list = your_car.items()
-# dict_items([('brand', 'Ford'), ('model', 'Mustang'), ('year', 1964)])
-print(item_list)
-print(type(item_list))  # <class 'dict_items'>*
+print(item_list) # dict_items([('brand', 'Ford'), ('model', 'Mustang'), ('year', 1964)])
+print(type(item_list)) # <class 'dict_items'>*
 
 # A VIEW/REFERENCE TO THE OBJECT NOT COPY
 
@@ -127,9 +125,9 @@ print(type(item_list))  # <class 'dict_items'>*
 # reflected in the values list.
 
 car = {
-    "brand": "Ford",
-    "model": "Mustang",
-    "year": 1964
+"brand": "Ford",
+"model": "Mustang",
+"year": 1964
 }
 
 x = car.keys()
@@ -139,10 +137,10 @@ z = car.items()
 # before the change
 print(x)
 print(y)
-car["condition"] = "fair"  # new key created
+car["condition"] = "fair" # new key created
 car["year"] = 2018
 
-# after the change
+#after the change
 print(x)
 print(y)
 print(z)
@@ -151,7 +149,7 @@ print(z)
 # To determine if a specified key is present in a dictionary use the in keyword:
 
 if "model" in car:
-    print("Yes, 'model' is one of the keys in the car dictionary")
+  print("Yes, 'model' is one of the keys in the car dictionary")
 
 # Change Values
 # You can change the value of a specific item by referring to its key name:
@@ -228,29 +226,29 @@ some_dict = {}
 # Print all KEY names in the dictionary, one by one:
 
 for x in some_dict:
-    print(x)
+  print(x)
 
 # Print all VALUES in the dictionary, one by one:
 
 for x in some_dict:
-    print(some_dict[x])
+  print(some_dict[x])
 
 # DICTIONARY SUB-LIST*
 
 # You can also use the values() method to return values of a dictionary:
 
 for x in some_dict.values():
-    print(x)
+  print(x)
 
 # You can use the keys() method to return the keys of a dictionary:
 
 for x in some_dict.keys():
-    print(x)
+  print(x)
 
 # Loop through both keys and values, by using the items() method:
 
 for x, y in some_dict.items():
-    print(x, y)
+  print(x, y)
 
 # Exercise
 
