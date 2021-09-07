@@ -54,7 +54,7 @@ def calc_tip(meal_total):
     return (tip_amt / 100) * meal_total
 
 
-def Split_Bill(meal_total, meal_tax, tip, num_customers):
+def Split_Bill(meal_total, meal_tax, tip, num_10customers):
     return (meal_total + meal_tax + tip) / num_customers
 
 

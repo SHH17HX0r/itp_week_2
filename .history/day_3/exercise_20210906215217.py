@@ -49,7 +49,7 @@ def calc_tax(tax_rate, meal_total):
 
 
 def calc_tip(meal_total):
-    tip_amt = float(input(
+    tip_amt = float(roundinput(
         'please enter the percentage tip that you would like to leave. ie. 20 '))
     return (tip_amt / 100) * meal_total
 
